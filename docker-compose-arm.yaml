@@ -1,0 +1,42 @@
+version: '1.0'
+
+services:
+  recon-facial:
+    platform: linux/arm
+    build:
+      dockerfile: Dockerfile
+      context: .
+    image: tiassiisspal/recon-facial-arm:v2
+    container_name: recon-facial-arm
+    ports:
+      - 5002:5002
+    working_dir: /app
+
+# version: '1.0'
+
+# services:
+#   recon-facial:
+#     platform: linux/amd64
+#     build:
+#       dockerfile: Dockerfile
+#       context: .
+#     image: tiassiisspal/recon-facial-amd64:v2
+#     container_name: recon-facial-amd64
+#     ports:
+#       - 5002:5002
+#     working_dir: /app
+
+
+# version: '1.0'
+
+# services:
+#   recon-facial:
+#     platform: linux/arm64
+#     build:
+#       dockerfile: Dockerfile.arm64
+#       context: .
+#     image: tiassiisspal/recon-facial-arm64:v2
+#     container_name: recon-facial-arm64
+#     ports:
+#       - 5002:5002
+#     working_dir: /app

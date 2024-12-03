@@ -1,0 +1,22 @@
+.venv
+.git*
+.vscode
+Dockerfile*
+log/*
+**/migrations/*
+**/__pycache__/*
+testes
+testes-assii
+tk.txt
+keys
+README.md
+.env
+*.sh
+Os n
+app
+venv
+.editorconfig
+cat-pub.txt
+token_1.py
+assiifacial
+/util
